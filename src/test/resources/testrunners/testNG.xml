@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="Test automation 3-Appln suite" verbose="3">
+
+	<test name="Orange HRM Test">
+		<classes>
+			<class name="myTest.OrangeHRMTest">
+			</class>
+		</classes>
+	</test>
+
+	<test name="OpenCart Test">
+		<classes>
+			<class name="myTest.DemoCartTest" />
+		</classes>
+	</test>
+
+	<test name="Amazon Test">
+		<classes>
+			<class name="myTest.AmazonTest" />
+		</classes>
+	</test>
+
+</suite>

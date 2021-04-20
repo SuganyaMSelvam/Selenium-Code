@@ -1,0 +1,42 @@
+TestNG
+: unit testing framework
+: QA automation
+: Only for JAVA
+: Junit
+
+Python: Pytest, unittest
+C#: Nunit
+Php: PhpUnit
+JS : Jasmine, Mocha
+
+: to write the test cases
+	: with annotations
+		: pre conditions
+		: test steps
+		: post steps
+
+: open source
+: can integrated with Maven, Gradle
+: can be integrated with Jenkins (CI-CD)
+: generates html reports, Allure, Extent Report
+: provides many annotations to design the and maintain the test cases
+: provides Data Provider for Data Driven Testing
+
+Test Case:
+Global Pre Conditions: @BeforeSuite, @BeforeTest, @BeforeClass
+Pre Conditions: @BeforeMethod
+	Test Steps: @Test, @DataProvider
+	Actual vs Expected Result -- Assertions
+Post Steps : @AfterMethod
+Global Post steps : @AfterClass, @AfterTest, @AfterSuite
+
+
+beforeMethod,AfterMethod will be always executed with Test if written. Its a pair
+Its a precondition we write in TestCaseDoc,like launch URL its needed before every test. 
+Whereas others like BfSuite,BfTest,BfClass will be executed only once unless its written twice or no.of times in the code.
+And BTest,Bsuite,BM,BClass its not mandatory to write everything in the code,Whichever suits/req write only that.
+Always BefMethod Test AfterMethod execution is a gud practice cos in negativecases where browser is crashed, it will close and move on to next cases as afterMethod is there.
+Execution Percentage will be gud if BM and AM approach is used
+Test-alphabetical order if not specified, Priority can be given like 1,2 etc
+
+
